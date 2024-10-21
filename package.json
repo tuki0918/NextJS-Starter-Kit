@@ -11,6 +11,8 @@
 		"check:fix": "biome check --write .",
 		"format:fix": "biome format --write .",
 		"lint:fix": "biome lint --write .",
+		"test": "vitest",
+		"test:cli": "vitest run",
 		"prepare": "husky"
 	},
 	"dependencies": {
