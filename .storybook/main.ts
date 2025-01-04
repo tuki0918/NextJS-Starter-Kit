@@ -5,6 +5,9 @@ const config: StorybookConfig = {
     "../components/**/*.mdx",
     "../components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
+  core: {
+    disableTelemetry: true,
+  },
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -15,5 +18,6 @@ const config: StorybookConfig = {
     name: "@storybook/nextjs",
     options: {},
   },
+  staticDirs: ["../public"],
 };
 export default config;
