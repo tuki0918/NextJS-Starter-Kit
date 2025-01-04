@@ -5,6 +5,9 @@ const config: StorybookConfig = {
     "../components/**/*.mdx",
     "../components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
+  core: {
+    disableTelemetry: true,
+  },
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
